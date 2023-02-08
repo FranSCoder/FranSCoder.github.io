@@ -1,89 +1,103 @@
-import NightlightRoundIcon from "@mui/icons-material/NightlightRound";
-import {
-  AppBar,
-  Stack,
-  Button,
-  ButtonGroup,
-  Toolbar,
-  Typography,
-  Box,
-  IconButton,
-  CssBaseline,
-} from "@mui/material";
-import React from "react";
-import { Outlet } from "react-router-dom";
+import NightlightRoundIcon from '@mui/icons-material/NightlightRound';
+import AppBar from '@mui/material/AppBar';
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
+import CssBaseline from '@mui/material/CssBaseline';
+import IconButton from '@mui/material/IconButton';
+import Stack from '@mui/material/Stack';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import { grey } from '@mui/material/colors';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import React from 'react';
+import { Outlet, Link } from 'react-router-dom';
+
+const typoColor = grey[50];
+const theme = createTheme();
 
 function Navbar() {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
-      <AppBar position="fixed">
-        <Toolbar disableGutters style={{ justifyContent: "center" }}>
-          <Stack
-            flexDirection="row"
-            justifyContent="space-between"
-            width={{ xs: "93vw", md: "835px" }}
-          >
-            <IconButton
-              variant="text"
-              color="inherit"
-              sx={{
-                ":focus": {
-                  outline: "none",
-                },
-              }}
+      <>
+        <AppBar position='fixed'>
+          <Toolbar disableGutters style={{ justifyContent: 'center' }}>
+            <Stack
+              flexDirection='row'
+              justifyContent='space-between'
+              width={{ xs: '93vw', md: '835px' }}
             >
-              <NightlightRoundIcon />
-            </IconButton>
-            <ButtonGroup
-              variant="text"
-              aria-label="text primary button group"
-              color="inherit"
-            >
-              <Button
+              <IconButton
+                variant='text'
+                color='inherit'
                 sx={{
-                  ":focus": {
-                    outline: "none",
+                  ':focus': {
+                    outline: 'none',
                   },
                 }}
               >
-                Sobre mí
-              </Button>
-              <Button
+                <NightlightRoundIcon />
+              </IconButton>
+              <ButtonGroup
+                variant='text'
+                aria-label='text primary button group'
+              >
+                <Link to='/'>
+                  <Button
+                    color='inherit'
+                    sx={{
+                      ':focus': {
+                        outline: 'none',
+                      },
+                      color: typoColor,
+                    }}
+                  >
+                    franscoder
+                  </Button>
+                </Link>
+                <Link to='/projects'>
+                  <Button
+                    color='inherit'
+                    sx={{
+                      ':focus': {
+                        outline: 'none',
+                      },
+                      color: typoColor,
+                    }}
+                  >
+                    Mis Proyectos
+                  </Button>
+                </Link>
+                <Link to='/contact'>
+                  <Button
+                    sx={{
+                      ':focus': {
+                        outline: 'none',
+                      },
+                      color: typoColor,
+                    }}
+                  >
+                    Contacto
+                  </Button>
+                </Link>
+              </ButtonGroup>
+              <IconButton
+                variant='text'
+                color='inherit'
                 sx={{
-                  ":focus": {
-                    outline: "none",
+                  ':focus': {
+                    outline: 'none',
                   },
                 }}
               >
-                Mis Proyectos
-              </Button>
-              <Button
-                sx={{
-                  ":focus": {
-                    outline: "none",
-                  },
-                }}
-              >
-                Contacto
-              </Button>
-            </ButtonGroup>
-            <IconButton
-              variant="text"
-              color="inherit"
-              sx={{
-                ":focus": {
-                  outline: "none",
-                },
-              }}
-            >
-              <Typography variant="subtitle2">ES</Typography>
-            </IconButton>
-          </Stack>
-        </Toolbar>
-      </AppBar>
-      <Outlet />
-    </>
+                <Typography variant='subtitle2'>ES</Typography>
+              </IconButton>
+            </Stack>
+          </Toolbar>
+        </AppBar>
+        <Outlet />
+      </>
+    </ThemeProvider>
   );
 }
 
