@@ -1,36 +1,40 @@
-import { Box, Typography, List, ListItem, ListItemText } from '@mui/material';
+import { Box, Typography, List, ListItem, ListItemText } from "@mui/material";
 
 function Home() {
   return (
     <>
       <Box
-        display='flex'
-        flexDirection='column'
-        justifyContent='center'
-        alignItems='center'
-        minHeight='100vh'
-        pb='5vh'
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+        minHeight="100vh"
+        pb="5vh"
       >
-        <Typography variant='h2'>¡Hola! Soy FranSCoder</Typography>
-        <Typography variant='h4'>
-          desarrollador web / frontend / React
+        <Typography variant="h2">¡Hola! Soy FranSCoder</Typography>
+        <Typography variant="h4">
+          desarrollador web / frontend / react.js
         </Typography>
       </Box>
       <Box
-        display='flex'
-        flexDirection='column'
-        justifyContent='center'
-        alignItems='center'
-        minHeight='100vh'
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+        minHeight="100vh"
       >
-        <Typography variant='h3' sx={{ textDecoration: 'underline' }}>
+        <Typography
+          gutterBottom
+          variant="h3"
+          sx={{ textDecoration: "underline" }}
+        >
           Sobre mí
         </Typography>
-        <Typography variant='body1'>
+        <Typography variant="body1">
           Si has llegado hasta aquí, lo más probable es que lo que más te
           interesen sean mis logros y capacidades, ¡así que vayamos al grano!
         </Typography>
-        <Box display='flex'>
+        <Box display="flex">
           <List>
             <ListItem>
               <ListItemText>Mis datos y estudios oficiales:</ListItemText>

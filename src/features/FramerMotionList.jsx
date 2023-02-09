@@ -7,9 +7,30 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
+import { motion } from "framer-motion";
 import React from "react";
 
-function ProjectList({ value }) {
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
+
+function FramerMotionList({ value }) {
   const projectsFull = allProjects.map((type) => type.projects).flat();
   const projectsFrontend = allProjects.filter(
     (type) => type.type === "Frontend"
@@ -30,9 +51,14 @@ function ProjectList({ value }) {
       : projectsVanilla;
 
   return (
-    <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, md: 12 }}>
-      {projects.map((project, index) => {
-        return (
+    <motion.ul
+      className="ProjectList"
+      variants={container}
+      initial="hidden"
+      animate="visible"
+    >
+      {projects.map((project, index) => (
+        <motion.li key={index} className="item" variants={item}>
           <Grid item xs={4} md={6} key={index}>
             <Card sx={{ maxWidth: 345 }}>
               <Typography variant="h6">{project.title}</Typography>
@@ -49,10 +75,10 @@ function ProjectList({ value }) {
               </CardActions>
             </Card>
           </Grid>
-        );
-      })}
-    </Grid>
+        </motion.li>
+      ))}
+    </motion.ul>
   );
 }
 
-export default ProjectList;
+export default FramerMotionList;

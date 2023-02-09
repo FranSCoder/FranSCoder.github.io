@@ -44,3 +44,18 @@
 .MuiTab-root:focus {
   outline: none;
 }
+
+.MuiCardMedia-root {
+  /* transform: scale(2); */
+}
+
+.MyCustomButton:hover {
+  background-color: inherit !important;
+}
+
+.ProjectList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
