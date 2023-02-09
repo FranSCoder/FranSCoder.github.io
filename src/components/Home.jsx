@@ -1,121 +1,136 @@
-import { Box, Typography, List, ListItem, ListItemText } from "@mui/material";
+import { Box, Typography, List, ListItem } from '@mui/material';
 
 function Home() {
   return (
     <>
       <Box
-        display="flex"
-        flexDirection="column"
-        justifyContent="center"
-        alignItems="center"
-        minHeight="100vh"
-        pb="5vh"
+        display='flex'
+        flexDirection='column'
+        justifyContent='center'
+        alignItems='center'
+        minHeight='100vh'
+        pb='5vh'
       >
-        <Typography variant="h2">¡Hola! Soy FranSCoder</Typography>
-        <Typography variant="h4">
+        <Typography variant='h2'>¡Hola! Soy FranSCoder</Typography>
+        <Typography variant='h4'>
           desarrollador web / frontend / react.js
         </Typography>
       </Box>
       <Box
-        display="flex"
-        flexDirection="column"
-        justifyContent="center"
-        alignItems="center"
-        minHeight="100vh"
+        display='flex'
+        flexDirection='column'
+        justifyContent='center'
+        alignItems='center'
+        minHeight='100vh'
       >
         <Typography
           gutterBottom
-          variant="h3"
-          sx={{ textDecoration: "underline" }}
+          variant='h3'
+          marginBottom={5}
+          sx={{ textDecoration: 'underline' }}
         >
           Sobre mí
         </Typography>
-        <Typography variant="body1">
-          Si has llegado hasta aquí, lo más probable es que lo que más te
-          interesen sean mis logros y capacidades, ¡así que vayamos al grano!
-        </Typography>
-        <Box display="flex">
-          <List>
-            <ListItem>
-              <ListItemText>Mis datos y estudios oficiales:</ListItemText>
+        <Box display='flex'>
+          <List
+            sx={{
+              width: '50%',
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
+            <ListItem
+              sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                textDecoration: 'underline',
+              }}
+            >
+              <Typography fontWeight='bold'>
+                Mis datos y estudios oficiales:
+              </Typography>
             </ListItem>
             <ListItem>
-              <ListItemText>
-                Me llamo Francisco Sánchez, tengo 30 años.
-              </ListItemText>
+              <Typography primary='Me llamo Francisco Sánchez, tengo 30 años.' />
             </ListItem>
             <ListItem>
-              <ListItemText>
+              <Typography>
                 Certificado full-stack developer freeCodeCamp.
-              </ListItemText>
+              </Typography>
             </ListItem>
             <ListItem>
-              <ListItemText>
-                Primer año del Grado en Física - UNED.
-              </ListItemText>
+              <Typography>Primer año del Grado en Física - UNED.</Typography>
             </ListItem>
             <ListItem>
-              <ListItemText>Bachillerato Científico-Tecnlógico.</ListItemText>
+              <Typography>Bachillerato Científico-Tecnlógico.</Typography>
             </ListItem>
             <ListItem>
-              <ListItemText>Inglés nivel C1.</ListItemText>
+              <Typography>Inglés nivel C1.</Typography>
             </ListItem>
             <ListItem>
-              <ListItemText>¡También soy graduado en turismo!</ListItemText>
+              <Typography>¡También soy graduado en turismo!</Typography>
             </ListItem>
           </List>
-          <List>
-            <ListItem>
-              <ListItemText>Mis conocimientos:</ListItemText>
+          <List
+            sx={{
+              width: '50%',
+            }}
+          >
+            <ListItem
+              sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                textDecoration: 'underline',
+              }}
+            >
+              <Typography fontWeight='bold'>Mis conocimientos:</Typography>
             </ListItem>
             <ListItem>
-              <ListItemText>
-                HTML & CSS (diseño web responsivo, SASS, bootstrap...).
-              </ListItemText>
+              <Typography>
+                HTML & CSS (diseño web adaptativo, SASS, bootstrap...).
+              </Typography>
             </ListItem>
             <ListItem>
-              <ListItemText>
+              <Typography>
                 JavaScript (React, Redux, jQuery, D3.js...).
-              </ListItemText>
+              </Typography>
             </ListItem>
             <ListItem>
-              <ListItemText>PostgreSQL, SQLite, MySQL, MongoDB.</ListItemText>
+              <Typography>PostgreSQL, SQLite, MySQL, MongoDB.</Typography>
             </ListItem>
             <ListItem>
-              <ListItemText>Git & GitHub.</ListItemText>
+              <Typography>Git & GitHub.</Typography>
             </ListItem>
             <ListItem>
-              <ListItemText>UNIX Sripting & Bash.</ListItemText>
+              <Typography>UNIX Sripting & Bash.</Typography>
             </ListItem>
             <ListItem>
-              <ListItemText>
+              <Typography>
                 Node.js (Express, Mongoose, Chai, Mocha, Socket, Helmet.js...).
-              </ListItemText>
+              </Typography>
             </ListItem>
             <ListItem>
-              <ListItemText>Typescript.</ListItemText>
+              <Typography>Typescript.</Typography>
             </ListItem>
             <ListItem>
-              <ListItemText>
+              <Typography>
                 Python (Sockets, Numpy, Pandas, Matplotlib...).
-              </ListItemText>
+              </Typography>
             </ListItem>
             <ListItem>
-              <ListItemText>PHP & Laravel.</ListItemText>
+              <Typography>PHP & Laravel.</Typography>
             </ListItem>
             <ListItem>
-              <ListItemText>
-                Machine Learning (Tensorflow, Keras...).
-              </ListItemText>
+              <Typography>Machine Learning (Tensorflow, Keras...).</Typography>
             </ListItem>
             <ListItem>
-              <ListItemText>Nociones de hacking ético.</ListItemText>
+              <Typography>Nociones de hacking ético.</Typography>
             </ListItem>
             <ListItem>
-              <ListItemText>
+              <Typography>
                 Otros:C, LaTeX, Jupyter Notebook, Google Colab, Maxima,
                 Matlab...
-              </ListItemText>
+              </Typography>
             </ListItem>
           </List>
         </Box>

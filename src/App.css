@@ -45,10 +45,6 @@
   outline: none;
 }
 
-.MuiCardMedia-root {
-  /* transform: scale(2); */
-}
-
 .MyCustomButton:hover {
   background-color: inherit !important;
 }
@@ -56,6 +52,19 @@
 .ProjectList {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6px;
+}
+
+.CustomLink {
+  display: flex;
+  align-items: center;
+}
+
+.BoldText {
+  font-weight: bold;
+}
+
+.MuiListItem-root {
+  padding-bottom: 0;
 }
