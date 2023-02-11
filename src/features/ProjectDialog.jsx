@@ -1,29 +1,23 @@
-import allProjects from '../data/allProjects';
-import { Typography } from '@mui/material';
-import Box from '@mui/material/Box';
+import { Box } from '@mui/material';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogContent';
+import Link from '@mui/material/Link';
+import Typography from '@mui/material/Typography';
 import Image from 'mui-image';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function ProjectDialog({ onClose, projectId, open }) {
   const handleClose = () => {
     onClose(projectId);
   };
 
-  const handleListItemClick = (value) => {
-    onClose(value);
-  };
+  const { t, i18n } = useTranslation();
 
-  const clickedProject = allProjects
-    .map((type) => type.projects)
-    .flat()
-    .find((project) => project.id === projectId);
-
-  if (clickedProject) {
+  if (open) {
     return (
       <Dialog onClose={handleClose} open={open} maxWidth='sm'>
         <DialogTitle
@@ -35,7 +29,7 @@ function ProjectDialog({ onClose, projectId, open }) {
             textDecoration: 'underline',
           }}
         >
-          {clickedProject.title}
+          {t(`projects.${Number(projectId)}.title`)}
         </DialogTitle>
         <DialogContent
           sx={{
@@ -43,11 +37,11 @@ function ProjectDialog({ onClose, projectId, open }) {
           }}
         >
           <Image
-            src={clickedProject.image}
+            src={t(`projects.${Number(projectId)}.image`)}
             height='100%'
             width='100%'
             fit='cover'
-            duration={2000}
+            duration={900}
             easing='cubic-bezier(0.7, 0, 0.6, 1)'
             showLoading={false}
             errorIcon={true}
@@ -58,7 +52,7 @@ function ProjectDialog({ onClose, projectId, open }) {
           />
           <Box paddingY={1}>
             <Typography variant='body1'>
-              {clickedProject.description}
+              {t(`projects.${Number(projectId)}.description`)}
             </Typography>
           </Box>
         </DialogContent>
@@ -69,8 +63,46 @@ function ProjectDialog({ onClose, projectId, open }) {
             paddingY: '20px',
           }}
         >
-          <Button variant='contained'>Ir al proyecto</Button>
-          <Button variant='contained'>Ver código</Button>
+          <Link
+            href={t(`projects.${Number(projectId)}.url`)}
+            target='_blank'
+            rel='noopener'
+            sx={{
+              textDecoration: 'none',
+            }}
+          >
+            <Button
+              variant='contained'
+              sx={{
+                ':hover': {
+                  backgroundColor: 'lightskyblue',
+                },
+              }}
+            >
+              {t('dialogButtons.item1')}
+            </Button>
+          </Link>
+          <Link
+            href={`https://github.com/FranSCoder/${t(
+              `projects.${Number(projectId)}.path`
+            )}`}
+            target='_blank'
+            rel='noopener'
+            sx={{
+              textDecoration: 'none',
+            }}
+          >
+            <Button
+              variant='contained'
+              sx={{
+                ':hover': {
+                  backgroundColor: 'lightskyblue',
+                },
+              }}
+            >
+              {t('dialogButtons.item2')}
+            </Button>
+          </Link>
         </DialogActions>
       </Dialog>
     );
