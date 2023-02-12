@@ -14,12 +14,6 @@ function Layout() {
   const theme = createTheme({
     palette: {
       mode: contrastMode,
-      // primary: {
-      //   main: '#039be5',
-      //   light: '#aaa',
-      //   dark: '#fff',
-      //   contrastText: '#fafafa',
-      // },
     },
   });
 

@@ -7,7 +7,7 @@ import Tab from '@mui/material/Tab';
 import { useState } from 'react';
 
 function Proyects() {
-  const [value, setValue] = useState('1');
+  const [tab, setValue] = useState('1');
 
   const handleChange = (e, newValue) => {
     setValue(newValue);
@@ -22,7 +22,7 @@ function Proyects() {
       flexDirection='column'
       alignItems='center'
     >
-      <TabContext value={value}>
+      <TabContext value={tab}>
         <Box>
           <TabList aria-label='Tabs example' onChange={handleChange}>
             <Tab label='Todo' value='1'></Tab>
@@ -32,16 +32,16 @@ function Proyects() {
           </TabList>
         </Box>
         <TabPanel value='1'>
-          <FramerMotionList value={value} />
+          <FramerMotionList tab={tab} />
         </TabPanel>
         <TabPanel value='2'>
-          <FramerMotionList value={value} />
+          <FramerMotionList tab={tab} />
         </TabPanel>
         <TabPanel value='3'>
-          <FramerMotionList value={value} />
+          <FramerMotionList tab={tab} />
         </TabPanel>
         <TabPanel value='4'>
-          <FramerMotionList value={value} />
+          <FramerMotionList tab={tab} />
         </TabPanel>
       </TabContext>
     </Box>

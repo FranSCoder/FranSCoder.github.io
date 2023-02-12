@@ -15,7 +15,7 @@ function ProjectDialog({ onClose, projectId, open }) {
     onClose(projectId);
   };
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   if (open) {
     return (

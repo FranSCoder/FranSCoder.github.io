@@ -4,7 +4,6 @@ import { CardHeader } from '@mui/material';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
 import { motion } from 'framer-motion';
 import Image from 'mui-image';
 import React, { useState } from 'react';
@@ -30,7 +29,7 @@ const item = {
   },
 };
 
-function FramerMotionList({ value }) {
+function FramerMotionList({ tab }) {
   const projectsFull = Object.values(data.projects);
   const projectsReact = Object.values(data.projects).filter(
     (project) => project.type === 'React'
@@ -43,15 +42,15 @@ function FramerMotionList({ value }) {
   );
 
   const projects =
-    value === '1'
+    tab === '1'
       ? projectsFull
-      : value === '2'
+      : tab === '2'
       ? projectsReact
-      : value === '3'
+      : tab === '3'
       ? projectsD3
       : projectsVanilla;
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   const [open, setOpen] = useState(false);
   const [projectId, setProjectId] = useState('');
@@ -61,7 +60,7 @@ function FramerMotionList({ value }) {
     setProjectId(id);
   };
 
-  const handleClose = (value) => {
+  const handleClose = () => {
     setOpen(false);
     setProjectId('');
   };
