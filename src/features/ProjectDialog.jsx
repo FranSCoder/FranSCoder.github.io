@@ -1,23 +1,29 @@
-import { Box } from '@mui/material';
-import Button from '@mui/material/Button';
-import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import DialogTitle from '@mui/material/DialogContent';
-import Link from '@mui/material/Link';
-import Typography from '@mui/material/Typography';
-import Image from 'mui-image';
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import data from '../locales/es/translation.json'
+import { Box } from '@mui/material'
+import Button from '@mui/material/Button'
+import Dialog from '@mui/material/Dialog'
+import DialogActions from '@mui/material/DialogActions'
+import DialogContent from '@mui/material/DialogContent'
+import DialogTitle from '@mui/material/DialogContent'
+import Link from '@mui/material/Link'
+import Typography from '@mui/material/Typography'
+import Image from 'mui-image'
+import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 function ProjectDialog({ onClose, projectId, open }) {
   const handleClose = () => {
-    onClose(projectId);
-  };
+    onClose(projectId)
+  }
 
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   if (open) {
+    const {
+      'code-url': codeUrl,
+      'project-url': projectUrl,
+      image,
+    } = data.projects[projectId]
     return (
       <Dialog onClose={handleClose} open={open} maxWidth='sm'>
         <DialogTitle
@@ -37,7 +43,7 @@ function ProjectDialog({ onClose, projectId, open }) {
           }}
         >
           <Image
-            src={t(`projects.${Number(projectId)}.image`)}
+            src={image}
             height='100%'
             width='100%'
             fit='cover'
@@ -54,6 +60,11 @@ function ProjectDialog({ onClose, projectId, open }) {
             <Typography variant='body1'>
               {t(`projects.${Number(projectId)}.description`)}
             </Typography>
+            <Typography variant='body2' color='#ff7878' paddingTop={1}>
+              {data.projects[projectId].description2
+                ? t(`projects.${Number(projectId)}.description2`)
+                : undefined}
+            </Typography>
           </Box>
         </DialogContent>
         <DialogActions
@@ -64,7 +75,7 @@ function ProjectDialog({ onClose, projectId, open }) {
           }}
         >
           <Link
-            href={t(`projects.${Number(projectId)}.url`)}
+            href={projectUrl}
             target='_blank'
             rel='noopener'
             sx={{
@@ -83,9 +94,7 @@ function ProjectDialog({ onClose, projectId, open }) {
             </Button>
           </Link>
           <Link
-            href={`https://github.com/FranSCoder/${t(
-              `projects.${Number(projectId)}.path`
-            )}`}
+            href={codeUrl}
             target='_blank'
             rel='noopener'
             sx={{
@@ -105,8 +114,8 @@ function ProjectDialog({ onClose, projectId, open }) {
           </Link>
         </DialogActions>
       </Dialog>
-    );
+    )
   }
 }
 
-export default ProjectDialog;
+export default ProjectDialog

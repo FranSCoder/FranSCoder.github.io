@@ -20,7 +20,7 @@
       }
     },
     "list2": {
-      "title": "Developer Knowledge",
+      "title": "Web Developer Knowledge",
       "items": {
         "item1": "HTML5, CSS & Javascript.",
         "item2": "Responsive web design.",
@@ -43,127 +43,139 @@
     "1": {
       "id": "1",
       "type": "React",
-      "title": "Quote machine",
-      "path": "quote-machine",
-      "image": "/images/quote-machine.png",
-      "url": "https://www.franscoder.com/quote-machine/",
-      "description": "This simple random quote machine generates a new quote from an array of quotes, and changes the layout color, each time its button is clicked. It uses SASS and React class components."
+      "title": "Jobify",
+      "code-url": "https://github.com/FranSCoder/mern-jobify-production",
+      "image": "/images/jobify.png",
+      "project-url": "https://mern-jobify-4g31.onrender.com/",
+      "description": "Jobify is a MERN project consisting of a job-tracker platform. It provides a way to enter and unify all our job applications made on different job-seeking platforms. The job applications accept different options, such as company name, application status or job type, among others. It includes summary box, search form, pagination, six-month charts, profile management, etc. It also implements a 'Demo Mode' that allows users to try the website without registering an account.",
+      "description2": "NOTICE: Free-tier Render.com servers shut down after fifteen minutes of inactivity. Please, patiently wait thirty seconds while the website loads for the first time."
     },
     "2": {
       "id": "2",
       "type": "React",
-      "title": "Markdown Previewer",
-      "path": "markdown-previewer",
-      "image": "/images/markdown-previewer.png",
-      "url": "https://www.franscoder.com/markdownpreviewer/",
-      "description": "A very simple app that shows our compiled Markdown code as we type it. It uses React, marked.js for the Markdown code processing and compiling, and prism.js for the output styling."
+      "title": "Music Pad",
+      "code-url": "https://github.com/FranSCoder/launchpad",
+      "image": "/images/launchpad.png",
+      "project-url": "https://www.franscoder.com/launchpad/",
+      "description": "Based on an electronic music launchpad, this app mainly relies on CSS and React. Each of the nine pad buttons are a single multi instantiated component, each mapped with its own keyboard key and sound. In addition to that, it has a volume control and a functional screen. Uses hooks, event handling, objects and arrays."
     },
     "3": {
       "id": "3",
       "type": "React",
-      "title": "Music Pad",
-      "path": "launchpad",
-      "image": "/images/launchpad.png",
-      "url": "https://www.franscoder.com/launchpad/",
-      "description": "Based on an electronic music launchpad, this app mainly relies on CSS and React. Each of the nine pad buttons are a single multi instantiated component, each mapped with its own keyboard key and sound. In addition to that, it has a volume control and a functional screen. Uses hooks, event handling, objects and arrays."
+      "title": "Calculator",
+      "code-url": "https://github.com/FranSCoder/calculator",
+      "image": "/images/calculator.png",
+      "project-url": "https://www.franscoder.com/calculator/",
+      "description": "A calculator that uses SASS, React, Regex and vanilla Javascript among others. It dedicates one part of the  screen to the current input and another one to the accumulated result. Each button has its own behavior depending on the last input observed."
     },
+
     "4": {
       "id": "4",
       "type": "React",
-      "title": "Calculator",
-      "path": "calculator",
-      "image": "/images/calculator.png",
-      "url": "https://www.franscoder.com/calculator/",
-      "description": "A calculator that uses SASS, React, Regex and vanilla Javascript among others. It dedicates one part of the  screen to the current input and another one to the accumulated result. Each button has its own behavior depending on the last input observed."
+      "title": "Markdown Previewer",
+      "code-url": "https://github.com/FranSCoder/markdown-previewer",
+      "image": "/images/markdown-previewer.png",
+      "project-url": "https://www.franscoder.com/markdownpreviewer/",
+      "description": "A very simple app that shows our compiled Markdown code as we type it. It uses React, marked.js for the Markdown code processing and compiling, and prism.js for the output styling."
     },
     "5": {
       "id": "5",
       "type": "React",
-      "title": "Pomodoro Clock",
-      "path": "pomodoro-clock",
-      "image": "/images/pomodoro-clock.png",
-      "url": "https://www.franscoder.com/pomodoro-clock/",
-      "description": "This pomodoro clock manages two intervals, one for the working time, and the other one for the resting time. Each time one interval is reached, a sound is triggered. It has control panels, which help us to set the timers and start, pause and restart the session. A custom accurateInterval() is implemented in order to fix the lack of precision of the setInterval() method on the browser. It is also based on the use of react class components and SASS."
+      "title": "Quote machine",
+      "code-url": "https://github.com/FranSCoder/quote-machine",
+      "image": "/images/quote-machine.png",
+      "project-url": "https://www.franscoder.com/quote-machine/",
+      "description": "This simple random quote machine generates a new quote from an array of quotes, and changes the layout color, each time its button is clicked. It uses SASS and React class components."
     },
+
     "6": {
       "id": "6",
-      "type": "D3",
-      "title": "US GDP",
-      "path": "us-gdp",
-      "image": "/images/us-gdp.png",
-      "url": "https://www.franscoder.com/us-gdp/",
-      "description": "A graph app that showcases the GDP of the US in the last 75 years. A D3 tooltip with extra information opens up when we move the pointer over each data. It relies on D3.js for tooltip design and data representation."
+      "type": "React",
+      "title": "Pomodoro Clock",
+      "code-url": "https://github.com/FranSCoder/pomodoro-clock",
+      "image": "/images/pomodoro-clock.png",
+      "project-url": "https://www.franscoder.com/pomodoro-clock/",
+      "description": "This pomodoro clock manages two intervals, one for the working time, and the other one for the resting time. Each time one interval is reached, a sound is triggered. It has control panels, which help us to set the timers and start, pause and restart the session. A custom accurateInterval() is implemented in order to fix the lack of precision of the setInterval() method on the browser. It is also based on the use of react class components and SASS."
     },
     "7": {
       "id": "7",
       "type": "D3",
-      "title": "Top-Seller Movies",
-      "path": "movie-sales",
-      "image": "/images/movie-sales.png",
-      "url": "https://www.franscoder.com/movie-sales/",
-      "description": "This app showcases a squared graph that orders the top-seller movies in history using a D3.js algorithm. Bigger in size means greater income and different color means different genres. We can also see more detailed information about each movie on mouseover."
+      "title": "US GDP",
+      "code-url": "https://github.com/FranSCoder/us-gdp",
+      "image": "/images/us-gdp.png",
+      "project-url": "https://www.franscoder.com/us-gdp/",
+      "description": "A graph app that showcases the GDP of the US in the last 75 years. A D3 tooltip with extra information opens up when we move the pointer over each data. It relies on D3.js for tooltip design and data representation."
     },
     "8": {
       "id": "8",
       "type": "D3",
-      "title": "Global Temperatures",
-      "path": "global-temperatures",
-      "image": "/images/global-temperatures.png",
-      "url": "https://www.franscoder.com/global-temperatures/",
-      "description": "This threshold graph shows the evolution of global temperatures for the last three centuries. The mean monthly temperature and the variation from the data mean can be checked by moving the pointer over each piece of data. It uses D3.js and SASS."
+      "title": "Top-Seller Movies",
+      "code-url": "https://github.com/FranSCoder/movie-sales",
+      "image": "/images/movie-sales.png",
+      "project-url": "https://www.franscoder.com/movie-sales/",
+      "description": "This app showcases a squared graph that orders the top-seller movies in history using a D3.js algorithm. Bigger in size means greater income and different color means different genres. We can also see more detailed information about each movie on mouseover."
     },
     "9": {
       "id": "9",
       "type": "D3",
-      "title": "Doping in Cycling",
-      "path": "doping-in-cycling",
-      "image": "/images/doping-in-cycling.png",
-      "url": "https://www.franscoder.com/doping-in-cycling/",
-      "description": "A graph of points that shows the best cycling marks in history, the blue ones were made by cyclists who have openly claimed to have consumed prohibited substances in his career, and the orange ones by presumably natural cyclists. By hovering over each piece of information, a tooltip shows the author of the mark, the year, the time, and their allegation of substance use if they have. It has been built with D3.js and SASS."
+      "title": "Global Temperatures",
+      "code-url": "https://github.com/FranSCoder/global-temperatures",
+      "image": "/images/global-temperatures.png",
+      "project-url": "https://www.franscoder.com/global-temperatures/",
+      "description": "This threshold graph shows the evolution of global temperatures for the last three centuries. The mean monthly temperature and the variation from the data mean can be checked by moving the pointer over each piece of data. It uses D3.js and SASS."
     },
     "10": {
       "id": "10",
       "type": "D3",
-      "title": "US Education",
-      "path": "us-education",
-      "image": "/images/us-education.png",
-      "url": "https://www.franscoder.com/useducation/",
-      "description": "A map that showcases the percentage of older than 25 years old adults who have superior education in each US county. It relies on two APIs, one for the geometric data and another one for the education data. The map is drawn using Topojson. The scale elements are created using D3.js."
+      "title": "Doping in Cycling",
+      "code-url": "https://github.com/FranSCoder/doping-in-cycling",
+      "image": "/images/doping-in-cycling.png",
+      "project-url": "https://www.franscoder.com/doping-in-cycling/",
+      "description": "A graph of points that shows the best cycling marks in history, the blue ones were made by cyclists who have openly claimed to have consumed prohibited substances in his career, and the orange ones by presumably natural cyclists. By hovering over each piece of information, a tooltip shows the author of the mark, the year, the time, and their allegation of substance use if they have. It has been built with D3.js and SASS."
     },
     "11": {
       "id": "11",
-      "type": "Vanilla",
-      "title": "Survey Form",
-      "path": "survey-form",
-      "image": "/images/survey-form.png",
-      "url": "https://www.franscoder.com/survey-form/",
-      "description": "A responsive feedback form built with vanilla HTML & CSS."
+      "type": "D3",
+      "title": "US Education",
+      "code-url": "https://github.com/FranSCoder/us-education",
+      "image": "/images/us-education.png",
+      "project-url": "https://www.franscoder.com/useducation/",
+      "description": "A map that showcases the percentage of older than 25 years old adults who have superior education in each US county. It relies on two APIs, one for the geometric data and another one for the education data. The map is drawn using Topojson. The scale elements are created using D3.js."
     },
     "12": {
       "id": "12",
       "type": "Vanilla",
-      "title": "Dark Souls Tribute Page",
-      "path": "tribute-page",
-      "image": "/images/tribute-page.png",
-      "url": "https://www.franscoder.com/tribute-page/",
-      "description": "Tribute to the video game Dark Souls built with Vanilla HTML & CSS."
+      "title": "Survey Form",
+      "code-url": "https://github.com/FranSCoder/survey-form",
+      "image": "/images/survey-form.png",
+      "project-url": "https://www.franscoder.com/survey-form/",
+      "description": "A responsive feedback form built with vanilla HTML & CSS."
     },
     "13": {
       "id": "13",
       "type": "Vanilla",
-      "title": "Docs Page",
-      "path": "doc-page",
-      "image": "/images/doc-page.png",
-      "url": "https://www.franscoder.com/docs-page/",
-      "description": "Responsive Javascript Documentation Page Built with Vanilla HTML & CSS."
+      "title": "Dark Souls Tribute Page",
+      "code-url": "https://github.com/FranSCoder/tribute-page",
+      "image": "/images/tribute-page.png",
+      "project-url": "https://www.franscoder.com/tribute-page/",
+      "description": "Tribute to the video game Dark Souls built with Vanilla HTML & CSS."
     },
     "14": {
       "id": "14",
       "type": "Vanilla",
+      "title": "Docs Page",
+      "code-url": "https://github.com/FranSCoder/doc-page",
+      "image": "/images/doc-page.png",
+      "project-url": "https://www.franscoder.com/docs-page/",
+      "description": "Responsive Javascript Documentation Page Built with Vanilla HTML & CSS."
+    },
+    "15": {
+      "id": "15",
+      "type": "Vanilla",
       "title": "Online Shop Page",
-      "path": "tribute-page",
+      "code-url": "https://github.com/FranSCoder/tribute-page",
       "image": "/images/landing-page.png",
-      "url": "https://www.franscoder.com/product-landing-page/",
+      "project-url": "https://www.franscoder.com/product-landing-page/",
       "description": "Responsive online shop website built with vanilla HTML & CSS."
     }
   },
