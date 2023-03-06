@@ -33,6 +33,7 @@ function ProjectDialog({ onClose, projectId, open }) {
             fontSize: '30px',
             paddingBottom: '0',
             textDecoration: 'underline',
+            overflowY: 'hidden',
           }}
         >
           {t(`projects.${Number(projectId)}.title`)}
@@ -40,6 +41,7 @@ function ProjectDialog({ onClose, projectId, open }) {
         <DialogContent
           sx={{
             paddingBottom: '0',
+            overflowY: 'hidden',
           }}
         >
           <Image
