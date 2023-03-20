@@ -43,6 +43,16 @@
     "1": {
       "id": "1",
       "type": "React",
+      "title": "Tech Lines",
+      "code-url": "https://github.com/FranSCoder/techlines",
+      "image": "/images/techlines.png",
+      "project-url": "https://techlines-uoaa.onrender.com/",
+      "description": "Techlines is a fully functional MERN e-commerce website. An user can create an account and start purchasing tech items right away. It accepts PayPal, SOFORT and card payments. It has Profile and Your Order pages. It also includes an Admin Console page only visible by the admin, which has Products, Reviews, Orders and Users Tabs to manage the website data.",
+      "description2": "NOTICE: Free-tier Render.com servers shut down after fifteen minutes of inactivity. Please, patiently wait thirty seconds while the website loads for the first time."
+    },
+    "2": {
+      "id": "2",
+      "type": "React",
       "title": "Jobify",
       "code-url": "https://github.com/FranSCoder/mern-jobify-production",
       "image": "/images/jobify.png",
@@ -50,8 +60,8 @@
       "description": "Jobify is a MERN project that provides a way to enter and unify all our job applications of different job-seeking platforms. It includes summary box, search form, pagination, six-month charts, profile management, etc. It also implements a 'Demo Mode' that allows users to try the website without registering an account.",
       "description2": "NOTICE: Free-tier Render.com servers shut down after fifteen minutes of inactivity. Please, patiently wait thirty seconds while the website loads for the first time."
     },
-    "2": {
-      "id": "2",
+    "3": {
+      "id": "3",
       "type": "React",
       "title": "Admin Dashboard",
       "code-url": "https://github.com/FranSCoder/fullstack-admin",
@@ -60,8 +70,8 @@
       "description": "Admin Panel that provides data about sales, users, affiliates and admin management in formats such as tables, sector diagrams, and even a world map. The app uses Nivo for the data visualization features. MongoDB aggregate pipeline provides the possibility to sort and search data server-side on-the-go where the data gets too large.",
       "description2": "NOTICE: Free-tier Render.com servers shut down after fifteen minutes of inactivity. Please, patiently wait thirty seconds while the website loads for the first time."
     },
-    "3": {
-      "id": "3",
+    "4": {
+      "id": "4",
       "type": "React",
       "title": "Music Pad",
       "code-url": "https://github.com/FranSCoder/launchpad",
@@ -69,8 +79,8 @@
       "project-url": "https://www.franscoder.com/launchpad/",
       "description": "Based on an electronic music launchpad, this app mainly relies on CSS and React. Each of the nine pad buttons are a single multi instantiated component, each mapped with its own keyboard key and sound. In addition to that, it has a volume control and a functional screen. Uses hooks, event handling, objects and arrays."
     },
-    "4": {
-      "id": "4",
+    "5": {
+      "id": "5",
       "type": "React",
       "title": "Calculator",
       "code-url": "https://github.com/FranSCoder/calculator",
@@ -79,8 +89,8 @@
       "description": "A calculator that uses SASS, React, Regex and vanilla Javascript among others. It dedicates one part of the  screen to the current input and another one to the accumulated result. Each button has its own behavior depending on the last input observed."
     },
 
-    "5": {
-      "id": "5",
+    "6": {
+      "id": "6",
       "type": "React",
       "title": "Markdown Previewer",
       "code-url": "https://github.com/FranSCoder/markdown-previewer",
@@ -88,8 +98,8 @@
       "project-url": "https://www.franscoder.com/markdownpreviewer/",
       "description": "A very simple app that shows our compiled Markdown code as we type it. It uses React, marked.js for the Markdown code processing and compiling, and prism.js for the output styling."
     },
-    "6": {
-      "id": "6",
+    "7": {
+      "id": "7",
       "type": "React",
       "title": "Quote machine",
       "code-url": "https://github.com/FranSCoder/quote-machine",
@@ -98,8 +108,8 @@
       "description": "This simple random quote machine generates a new quote from an array of quotes, and changes the layout color, each time its button is clicked. It uses SASS and React class components."
     },
 
-    "7": {
-      "id": "7",
+    "8": {
+      "id": "8",
       "type": "React",
       "title": "Pomodoro Clock",
       "code-url": "https://github.com/FranSCoder/pomodoro-clock",
@@ -107,8 +117,8 @@
       "project-url": "https://www.franscoder.com/pomodoro-clock/",
       "description": "This pomodoro clock manages two intervals, one for the working time, and the other one for the resting time. Each time one interval is reached, a sound is triggered. It has control panels, which help us to set the timers and start, pause and restart the session. A custom accurateInterval() is implemented in order to fix the lack of precision of the setInterval() method on the browser. It is also based on the use of react class components and SASS."
     },
-    "8": {
-      "id": "8",
+    "9": {
+      "id": "9",
       "type": "D3",
       "title": "US GDP",
       "code-url": "https://github.com/FranSCoder/us-gdp",
@@ -116,8 +126,8 @@
       "project-url": "https://www.franscoder.com/us-gdp/",
       "description": "A graph app that showcases the GDP of the US in the last 75 years. A D3 tooltip with extra information opens up when we move the pointer over each data. It relies on D3.js for tooltip design and data representation."
     },
-    "9": {
-      "id": "9",
+    "10": {
+      "id": "10",
       "type": "D3",
       "title": "Top-Seller Movies",
       "code-url": "https://github.com/FranSCoder/movie-sales",
@@ -125,8 +135,8 @@
       "project-url": "https://www.franscoder.com/movie-sales/",
       "description": "This app showcases a squared graph that orders the top-seller movies in history using a D3.js algorithm. Bigger in size means greater income and different color means different genres. We can also see more detailed information about each movie on mouseover."
     },
-    "10": {
-      "id": "10",
+    "11": {
+      "id": "11",
       "type": "D3",
       "title": "Global Temperatures",
       "code-url": "https://github.com/FranSCoder/global-temperatures",
@@ -134,8 +144,8 @@
       "project-url": "https://www.franscoder.com/global-temperatures/",
       "description": "This threshold graph shows the evolution of global temperatures for the last three centuries. The mean monthly temperature and the variation from the data mean can be checked by moving the pointer over each piece of data. It uses D3.js and SASS."
     },
-    "11": {
-      "id": "11",
+    "12": {
+      "id": "12",
       "type": "D3",
       "title": "Doping in Cycling",
       "code-url": "https://github.com/FranSCoder/doping-in-cycling",
@@ -143,8 +153,8 @@
       "project-url": "https://www.franscoder.com/doping-in-cycling/",
       "description": "A graph of points that shows the best cycling marks in history, the blue ones were made by cyclists who have openly claimed to have consumed prohibited substances in his career, and the orange ones by presumably natural cyclists. By hovering over each piece of information, a tooltip shows the author of the mark, the year, the time, and their allegation of substance use if they have. It has been built with D3.js and SASS."
     },
-    "12": {
-      "id": "12",
+    "13": {
+      "id": "13",
       "type": "D3",
       "title": "US Education",
       "code-url": "https://github.com/FranSCoder/us-education",
@@ -152,8 +162,8 @@
       "project-url": "https://www.franscoder.com/useducation/",
       "description": "A map that showcases the percentage of older than 25 years old adults who have superior education in each US county. It relies on two APIs, one for the geometric data and another one for the education data. The map is drawn using Topojson. The scale elements are created using D3.js."
     },
-    "13": {
-      "id": "13",
+    "14": {
+      "id": "14",
       "type": "Vanilla",
       "title": "Survey Form",
       "code-url": "https://github.com/FranSCoder/survey-form",
@@ -161,8 +171,8 @@
       "project-url": "https://www.franscoder.com/survey-form/",
       "description": "A responsive feedback form built with vanilla HTML & CSS."
     },
-    "14": {
-      "id": "14",
+    "15": {
+      "id": "15",
       "type": "Vanilla",
       "title": "Dark Souls Tribute Page",
       "code-url": "https://github.com/FranSCoder/tribute-page",
@@ -170,8 +180,8 @@
       "project-url": "https://www.franscoder.com/tribute-page/",
       "description": "Tribute to the video game Dark Souls built with Vanilla HTML & CSS."
     },
-    "15": {
-      "id": "15",
+    "16": {
+      "id": "16",
       "type": "Vanilla",
       "title": "Docs Page",
       "code-url": "https://github.com/FranSCoder/doc-page",
@@ -179,8 +189,8 @@
       "project-url": "https://www.franscoder.com/docs-page/",
       "description": "Responsive Javascript Documentation Page Built with Vanilla HTML & CSS."
     },
-    "16": {
-      "id": "16",
+    "17": {
+      "id": "17",
       "type": "Vanilla",
       "title": "Online Shop Page",
       "code-url": "https://github.com/FranSCoder/tribute-page",
