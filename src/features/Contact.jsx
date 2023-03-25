@@ -58,7 +58,7 @@ function Contact() {
         </Grid>
         <Grid item display='flex' justifyContent='center'>
           <Link
-            href='https://www.linkedin.com/in/franscoder/'
+            href='https://github.com/FranSCoder'
             display='flex'
             underline='none'
             alignItems='center'
