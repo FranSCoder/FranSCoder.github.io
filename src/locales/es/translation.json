@@ -22,19 +22,22 @@
     "list2": {
       "title": "Conocimientos en desarrollo web",
       "items": {
-        "item1": "HTML5, CSS & Javascript.",
-        "item2": "Diseño web adaptativo.",
-        "item3": "SASS, bootstrap, tailwind, MaterialUI, react styled-components & framer-motion.",
-        "item4": "React, Redux, jQuery & D3.js.",
+        "item1": "React, Redux, ReduxTK",
+        "item2": "Next.js 13",
+        "item3": "Node.js (Express, Mongoose, Chai, Mocha, Socket.io, Helmet.js and more).",
+        "item4": "Git.",
         "item5": "Typescript.",
         "item6": "PostgreSQL, MySQL, SQLite & MongoDB.",
-        "item7": "Node.js (Express, Mongoose, Chai, Mocha, Socket, Helmet.js y más).",
-        "item8": "Git.",
-        "item9": "UNIX Scripting & Bash.",
-        "item10": "Python (Socket, Numpy, Pandas & Matplotlib).",
-        "item11": "PHP & Laravel.",
-        "item12": "Machine Learning (Tensorflow & Keras).",
-        "item13": "Otros: C, LaTeX, Jupyter Notebook, Google Colab, Maxima, Matlab..."
+        "item7": "css.modules, bootstrap, tailwind, MaterialUI, react styled-components,  SASS, framer-motion...",
+        "item8": "HTML5, CSS & Javascript.",
+        "item9": "Desarrollo web adaptativo.",
+        "item10": "D3.js.",
+        "item11": "jQuery",
+        "item12": "UNIX Scripting & Bash.",
+        "item13": "Python (Socket, Numpy, Pandas & Matplotlib).",
+        "item14": "PHP & Laravel.",
+        "item15": "Machine Learning (Tensorflow & Keras).",
+        "item16": "Otros: C, LaTeX, Jupyter Notebook, Google Colab, Maxima, Matlab..."
       }
     }
   },
